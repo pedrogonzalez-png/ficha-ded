@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ficha de Personagem - D&D</title>
+    <link rel="stylesheet" href="./css/ficha.css">
+</head>
+
+<body>
+    <div class="ficha-container">
+        <h1>Ficha de Personagem - Dungeons & Dragons</h1>
+
+        <section class="info-basica">
+            <input type="text" placeholder="Nome do Personagem">
+            <input type="text" placeholder="Raça">
+            <input type="text" placeholder="Classe">
+            <input type="number" placeholder="Nível" min="1" max="20" id="nivel">
+        </section>
+
+        <section class="atributos">
+            <h2>Atributos</h2>
+            <div class="atributo"><label>Força</label><input type="number"></div>
+            <div class="atributo"><label>Destreza</label><input type="number"></div>
+            <div class="atributo"><label>Constituição</label><input type="number"></div>
+            <div class="atributo"><label>Inteligência</label><input type="number"></div>
+            <div class="atributo"><label>Sabedoria</label><input type="number"></div>
+            <div class="atributo"><label>Carisma</label><input type="number"></div>
+        </section>
+
+        <section class="combate">
+            <h2>Combate</h2>
+            <input type="text" placeholder="Classe de Armadura">
+            <input type="text" placeholder="Pontos de Vida">
+            <input type="text" placeholder="Iniciativa">
+            <input type="text" placeholder="Deslocamento">
+        </section>
+
+        <section class="pericias">
+            <h2>Perícias</h2>
+            <textarea placeholder="Acrobacia, Atletismo, Furtividade, etc..."></textarea>
+        </section>
+
+        <section class="ataques">
+            <h2>Ataques e Magias</h2>
+            <label for="ataque">Descrição do Ataque:</label>
+            <input type="text" id="ataque" placeholder="Ex: 2d6+1">
+
+            <div class="resultados-dano">
+                <p><strong>Dano Mínimo:</strong> <span id="danoMin">-</span></p>
+                <p><strong>Dano Médio:</strong> <span id="danoMedio">-</span></p>
+                <p><strong>Dano Máximo:</strong> <span id="danoMax">-</span></p>
+            </div>
+        </section>
+
+        <section class="equipamentos">
+            <h2>Equipamentos</h2>
+            <textarea placeholder="Mochila, corda, poção de cura..."></textarea>
+        </section>
+
+        <section class="habilidades">
+            <h2>Características & Habilidades</h2>
+            <textarea placeholder="Sentidos aguçados, resistência a fogo, etc..."></textarea>
+        </section>
+    </div>
+
+    <script src="./ficha.js"></script>
+</body>
+
+</html>

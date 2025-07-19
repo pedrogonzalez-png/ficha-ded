@@ -1,0 +1,72 @@
+body {
+  background-color: #1e1e1e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.ficha-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #2a2a2a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+}
+
+h1,
+h2 {
+  color: #00ffd5;
+  border-bottom: 1px solid #00ffd5;
+  padding-bottom: 5px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.atributos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.atributo label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.resultados-dano {
+  background-color: #1c1c1c;
+  padding: 10px;
+  border: 1px solid #00ffd5;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.resultados-dano p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #eee;
+}
